@@ -18,31 +18,36 @@
   <body>
     </br></br>
     <div class="container">
-        <div class="shadow-lg p-3 mb-5 bg-body rounded">
-            <h4>Agenda de Contactos</h4>
-            <form action="/crear" method="POST">
-                <div class="col-md-6">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input id="nombre" name="nombre" type="text" class="form-control" required>
-                </div>
+      <form action="/crear" method="POST">
+        <div class="row">
+          <div class="col">
+                      <div class="">
+                          <label for="nombre" class="form-label">Nombre</label>
+                          <input id="nombre" name="nombre" type="text" class="form-control" required>
+                      </div>
 
-                <div class="col-md-6">
-                    <label for="apellido" class="form-label">Apellido</label>
-                    <input id="apellido" name="apellido" type="text" class="form-control" required>
-                </div>
+                      <div class="">
+                          <label for="apellido" class="form-label">Apellido</label>
+                          <input id="apellido" name="apellido" type="text" class="form-control" required>
+                      </div>
 
-                <div class="col-md-6">
-                    <label for="edad" class="form-label">Edad</label>
-                    <input id="edad" name="edad" type="number" class="form-control" required>
-                </div>
+                      <div class="">
+                          <label for="edad" class="form-label">Edad</label>
+                          <input id="edad" name="edad" type="number" class="form-control" required>
+                      </div>
 
-                <div class="col-md-6">
-                    <label for="telefono" class="form-label">Telefono</label>
-                    <input id="telefono" name="telefono" type="text" class="form-control" required>
-                </div>
-         </div>
-                <button type="submit" class="w-100 btn btn-guardar btn-lg"><i class="bi bi-save"></i>Registrar Contacto</button>
-            </form>
+                      <div class="">
+                          <label for="telefono" class="form-label">Telefono</label>
+                          <input id="telefono" name="telefono" type="text" class="form-control" required>
+                      </div>
+          </div>
+          <div class="col">
+            <center><img src="img/img1.png" width="300" height="300"></center>
+          </div>
+        </div>
+      </br>
+              <button type="submit" class="w-100 btn btn-guardar btn-lg"><i class="bi bi-save"></i>Registrar Contacto</button>
+      </form>
             <!-- Tabla Alumnos  -->
             <table id="tablaPersonas" class="table mt-4">
                 <thead>
